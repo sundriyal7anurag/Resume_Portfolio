@@ -1,0 +1,92 @@
+.journey-line {
+  position: relative;
+  margin: 20px; /* Margin around the journey line */
+  border-left: 2px solid #ccc; /* Soft gray border for structure */
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  .journey-stage {
+    position: relative; /* Relative positioning for dot placement */
+    margin-bottom: 20px; /* Space between journey stages */
+
+    .dot {
+      position: absolute;
+      left: -11px; /* Position the dot to the left */
+      width: 20px; /* Width of the dot */
+      height: 20px; /* Height of the dot */
+      background-color: black; /* Set dot color to black */
+      border-radius: 50%; /* Circular dot */
+      border: 2px solid white; /* White border around the dot */
+      z-index: 1; /* Ensure the dot is above content */
+    }
+
+    .content {
+      background-color: #ffffff; /* White background for content area */
+      padding-bottom: 20px; /* Set top padding to 0, left to 10px, right to 20px, bottom to 20px */
+      color: #555; /* Default text color */
+      margin-left: 30px; /* Space for the dot */
+      border: none; /* Remove border */
+      box-shadow: none; /* Remove shadow */
+      border-radius: 0; /* Remove rounded corners */
+      font-size: 1rem !important;
+
+      .header {
+        display: flex; /* Flexbox for header layout */
+        justify-content: space-between; /* Space between title and date */
+        align-items: center; /* Center vertically */
+        margin-bottom: 5px; /* Space below header */
+
+        h4 {
+          font-size: 1.5rem; /* Increased font size for heading */
+          margin: 0; /* Remove default margin */
+          color: #555; /* Default color for heading */
+          font-family: 'Arial', sans-serif; /* Clean, professional font */
+          text-shadow: none; /* Remove text shadow */
+          transition: color 0.3s; /* Transition for color change on hover */
+
+          &:hover {
+            color: #0056b3; /* Change heading color on hover */
+            text-decoration: underline; /* Underline on hover */
+          }
+        }
+
+        p.date {
+          // font-size: 0.9rem; /* Font size for date */
+          color: #555; /* Default color for date */
+          margin: 0; /* Remove default margin */
+        }
+      }
+
+      .description {
+        font-size: 0.9rem; /* Font size for description */
+        color: #555; /* Default text color for description */
+        margin: 10px 0; /* Margin above and below */
+      }
+
+      .alternate-content {
+        padding-left: 20px; /* Indentation for alternate content */
+
+        p {
+          margin: 10px 0; /* Margin for paragraphs */
+          // font-size: 0.9rem; /* Font size for alternate content */
+          color: #555; /* Default text color */
+
+          strong {
+            font-weight: bold; /* Bold for emphasis */
+            color: #555; /* Set strong text color to #555 */
+          }
+        }
+
+        ul {
+          padding-left: 20px; /* Indentation for list */
+          margin-top: 10px; /* Space above list */
+
+          li {
+            // font-size: 0.9rem; /* Font size for list items */
+            color: #555; /* Default text color for list items */
+            margin-bottom: 5px; /* Space below list items */
+          }
+        }
+      }
+    }
+  }
+}

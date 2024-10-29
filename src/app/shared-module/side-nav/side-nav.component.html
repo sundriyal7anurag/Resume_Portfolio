@@ -1,0 +1,22 @@
+<div class="sidenav">
+    <!-- Profile Section -->
+    <div class="profile">
+      <img [src]="sideNavData.profileImgUrl" alt="Profile Picture" class="profile-pic" />
+      <div class="name-container">
+        <span class="name">{{sideNavData.name}}</span>
+        <a [href]="sideNavData.resumeUrl" download>
+          <img [src]="sideNavData.resumeIcon" class="download-icon" />
+        </a>
+      </div>
+      <p class="designation">{{sideNavData.designation}}</p>
+    </div>
+    
+  
+    <!-- Navigation Links -->
+    <a  *ngFor="let navData of sideNavData.navLinks" [routerLink]="navData.navLinkUrl" routerLinkActive="active">
+      <img [src]="navData.navIcon"  class="nav-icon" />
+      {{navData.title}}
+    </a>
+   
+  </div>
+  

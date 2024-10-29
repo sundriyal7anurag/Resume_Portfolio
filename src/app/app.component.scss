@@ -1,0 +1,18 @@
+.display-flex {
+  display: flex;
+  min-height: 100vh; /* Ensures the container grows if content is taller than viewport */
+  overflow: hidden; /* Prevents scrolling on the parent container */
+}
+
+.rhs-main {
+  margin-left: 270px; /* Space between sidebar and main content */
+  flex-grow: 1; /* Takes up remaining space beside the sidebar */
+  // padding: 20px;
+  background-color: #ffffff; /* White background for a clean look */
+  overflow-y: auto; /* Allows scrolling for large content */
+  display: flex;
+  // justify-content: center; /* Centers horizontally */
+  box-sizing: border-box; /* Ensures padding doesn’t cause overflow */
+  height: calc(100vh - 20px); /* Adjust height to allow for padding */
+  display: block;
+}
