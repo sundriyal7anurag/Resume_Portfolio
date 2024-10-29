@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import {
   contactObj,
   listObj,
@@ -5,6 +6,9 @@ import {
   skillExperienceObj,
   textbody,
 } from './constantsStructure';
+=======
+import { contactObj, listObj, sideNavfullObj, skillExperienceObj, textbody } from './constantsStructure';
+>>>>>>> a2f5702 (Initial Commit)
 
 export const educationDataArr: Array<listObj> = [
   {
@@ -105,6 +109,10 @@ export const aboutData: textbody = {
     'When I’m not working, I’m checking out new tools, reading tech blogs, or relaxing with some gaming or cricket (it’s my way to recharge and spark new ideas). </br> If you’re into cool projects too, let’s see what we can build!',
 };
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> a2f5702 (Initial Commit)
 export const contactData: Array<contactObj> = [
   {
     url: 'https://www.linkedin.com/in/anurag-sundriyal/',
@@ -132,12 +140,18 @@ export const contactData: Array<contactObj> = [
   },
 ];
 
+<<<<<<< HEAD
 export const skillExperienceData: Array<listObj> = [
+=======
+
+export const skillExperienceData: Array<listObj>= [
+>>>>>>> a2f5702 (Initial Commit)
   {
     title: 'Primary Skill',
     description: 'Angular',
   },
   {
+<<<<<<< HEAD
     title: 'Frontend Technologies',
     description: 'Angular, ReactJS, TypeScript, JavaScript, HTML5, CSS3, SASS',
   },
@@ -183,3 +197,36 @@ export const sideNavData: sideNavfullObj = {
     },
   ],
 };
+=======
+    title:'Frontend Technologies',
+    description:'Angular, ReactJS, TypeScript, JavaScript, HTML5, CSS3, SASS'
+  },
+  {
+    title:'Backend Technologies',
+    description:'NodeJS, ExpressJS'
+  },
+  {
+    title:'Version Control',
+    description:'Git, GitHub, Bitbucket'
+  }
+
+]
+
+
+export const sideNavData: sideNavfullObj= {
+  name:"Anurag Sundriyal",
+  profileImgUrl:"assets/AnuragSundriyalPP.jpg",
+  designation:"Angular Developer",
+  resumeUrl:"https://drive.google.com/uc?export=download&id=1KpLomoVUvWH_3jbuYO-XGgmCXveF3Ke1",
+  resumeIcon:"assets/icons/download.png",
+  navLinks:[
+  {title:"Home", navLinkUrl:"/home", navIcon:"assets/icons/home.png"},
+  {title:"Education", navLinkUrl:"/education", navIcon:"assets/icons/education.png"},
+  {title:"Experience", navLinkUrl:"/experience", navIcon:"assets/icons/experience.png"},
+  {title:"skills and expertise", navLinkUrl:"/skills-and-expertise", navIcon:"assets/icons/skills.png"},
+  {title:"About", navLinkUrl:"/about", navIcon:"assets/icons/about.png"}, 
+  {title:"Contact", navLinkUrl:"/contact", navIcon:"assets/icons/contact.png"},
+  ]
+}
+
+>>>>>>> a2f5702 (Initial Commit)
