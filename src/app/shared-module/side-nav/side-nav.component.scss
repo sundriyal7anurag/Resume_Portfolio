@@ -1,0 +1,85 @@
+.sidenav {
+  position: fixed; // Fixes the sidebar in place
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100vh; // Full screen height
+  background-color: #f3f2ef; // Soft gray background like LinkedIn's sidebar
+  padding: 20px;
+  overflow-y: auto; // Allows scrolling if content overflows
+  font-family: Arial, sans-serif;
+
+  // Profile Section
+  .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+
+    .name-container {
+      display: flex;
+    }
+    
+    .download-icon {
+      width: 16px; /* Adjust icon size as needed */
+      height: 16px;
+      cursor: pointer; /* Pointer cursor for clickable icon */
+      transition: transform 0.3s ease;
+      padding-left: 5px;
+    }
+    
+    .download-icon:hover {
+      transform: scale(1.1); /* Slight zoom effect on hover */
+    }
+    .profile-pic {
+      width: 120px;
+      height: 140px;
+      border-radius: 50%;
+      background-color: #d8d8d8; // Placeholder color if image not loaded
+      margin-bottom: 10px;
+      border: 2px solid #ffffff; // White border for contrast
+    }
+
+    .name {
+      font-size: 1.2rem;
+      color: #333;
+      font-weight: bold;
+      margin: 5px 0;
+      display: inline;
+    }
+
+    .designation {
+      font-size: 0.9rem;
+      color: #777; // Subdued color for designation
+      margin: 0;
+    }
+  }
+
+  // Navigation Links
+  a {
+    display: block;
+    color: #555;
+    font-size: 1rem;
+    padding: 10px 0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    .nav-icon {
+      width: 20px; /* Adjust icon size as needed */
+      height: 20px;
+      margin-right: 8px; /* Space between icon and title */
+    }
+
+    &:hover {
+      color: #007bff; // Blue highlight on hover
+    }
+
+    &.active {
+      font-weight: bold;
+      color: #0056b3; // Darker blue for active link
+      border-left: 4px solid #007bff; // Left border for active link indicator
+      padding-left: 16px; // Adjust padding to accommodate border
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.body-container {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 2.1;
+  padding: 20px;
+}
+
+.skills-container {
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.primary-skill-title {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 0.5em;
+}
+
+.primary-skill {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #d9534f; /* Highlight color for primary skill */
+  margin-bottom: 1em;
+}
+
+.skill-category {
+  margin-top: 1em;
+}
+
+.category-title {
+  font-size: 1.3em;
+  color: #5bc0de; /* Category title color */
+  margin-bottom: 0.5em;
+}
+
+.skills-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.skill-item {
+  font-size: 1em;
+  color: #333;
+  padding: 0.2em 0;
+}

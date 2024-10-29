@@ -1,0 +1,13 @@
+<app-section-header [headerData]="aboutHeaderData"></app-section-header>
+<app-section-body>
+<div class="body-container">
+    <div class="margin-botton20px padding-box" [innerHTML]="myAboutData.description1"></div>
+    <div class="margin-botton20px padding-box">
+        <p><strong>Career Highlights:</strong> </p><strong></strong>
+        <ul>
+            <li *ngFor="let highlight of myAboutData.highlight">{{ highlight }}</li>
+          </ul>
+    </div>
+    <div class="padding-box" [innerHTML]="myAboutData.description2"></div>
+</div>
+</app-section-body>

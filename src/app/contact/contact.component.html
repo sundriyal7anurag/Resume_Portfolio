@@ -1,0 +1,11 @@
+<app-section-header [headerData]="contactHeaderData"></app-section-header>
+<app-section-body>
+  <div class="contact-info"> 
+    <a *ngFor="let data of myContactData" [href]="data.url" target="_blank">
+      <img [src]="data.imgSrc" [alt]="data.alt"/>
+      <span>{{data.title}}</span>
+    </a>
+  </div>
+  
+</app-section-body>
+

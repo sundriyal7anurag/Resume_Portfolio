@@ -1,0 +1,27 @@
+<div class="journey-line">
+  <div class="journey-stage" *ngFor="let data of listData">
+    <div class="dot"></div>
+    <div class="content">
+      <div class="header">
+        <h4>{{ data.title }}</h4>
+        <p class="date">{{ data.date }}</p>
+      </div>
+      <div *ngIf="data.description; else notLoggedIn">
+        <p class="description">{{ data.description }}</p>
+      </div>
+
+      <ng-template #notLoggedIn>
+        <div class="alternate-content">
+          <p><strong>Title:</strong> {{ data.title }}</p>
+          <p><strong>Duration:</strong> {{ data.duration }}</p>
+          <p><strong>Project Overview:</strong> {{ data.projectOverview }}</p>
+          <p><strong>Role:</strong> {{ data.role }}</p>
+          <p><strong>Responsibilities:</strong></p>
+          <ul>
+            <li *ngFor="let responsibility of data.responsibilities">{{ responsibility }}</li>
+          </ul>
+        </div>
+      </ng-template>
+    </div>
+  </div>
+</div>
