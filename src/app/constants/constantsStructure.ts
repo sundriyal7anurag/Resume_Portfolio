@@ -21,27 +21,27 @@ export interface contactObj {
   alt: string;
 }
 
-export interface skillExperienceObj{
-  primarySkill: string,
-  categories: Array<skillCatObj> 
+export interface skillExperienceObj {
+  primarySkill: string;
+  categories: Array<skillCatObj>;
 }
 
 export interface skillCatObj {
-  category: string,
-  skills: Array<string>
+  category: string;
+  skills: Array<string>;
 }
 
-export interface navLinksObj{
-  title:string,
-  navLinkUrl: string,
-  navIcon: string
+export interface navLinksObj {
+  title: string;
+  navLinkUrl: string;
+  navIcon: string;
 }
 
-export interface sideNavfullObj{
-  name: string,
-  profileImgUrl: string,
-  designation: string,
-  resumeUrl: string,
-  resumeIcon: string,
-  navLinks: Array<navLinksObj>
+export interface sideNavfullObj {
+  name: string;
+  profileImgUrl: string;
+  designation: string;
+  resumeUrl: string;
+  resumeIcon: string;
+  navLinks: Array<navLinksObj>;
 }

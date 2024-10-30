@@ -1,6 +1,11 @@
-<div class="display-flex">
-  <app-side-nav [sideNavData]="mySideNavDataData"></app-side-nav>
-  <div class="router-container rhs-main">
+<div class="container">
+  <app-side-nav
+    [sideNavData]="mySideNavData"
+    (collapsedChange)="onSidebarCollapsed($event)"
+    [ngClass]="{ 'expanded-width': !isSidebarCollapsed, 'collapse-width': isSidebarCollapsed }"
+  >
+  </app-side-nav>
+  <div class="rhs-main" [class.collapsed]="isSidebarCollapsed">
     <router-outlet></router-outlet>
   </div>
 </div>

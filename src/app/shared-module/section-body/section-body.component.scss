@@ -1,3 +1,6 @@
+.card-container {
+  width: 100%;
+}
 
 .zoom-card {
   background-color: #ffffff; /* Card background */
@@ -7,7 +10,18 @@
   border-radius: 8px; /* Rounded corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
   border: 1px solid #e1e1e1; /* Card border */
-  width: 800px; /* Fixed width for the card */
   margin-left: auto; /* Center the card horizontally */
   margin-right: auto; /* Center the card horizontally */
+}
+
+.card-width {
+  width: 800px; /* Fixed width for larger screens */
+}
+
+/* Responsive card width for screens 768px and below */
+@media (max-width: 768px) {
+  .card-width {
+    width: 380px; /* Full width on small screens */
+    padding: 15px; /* Adjust padding for smaller screens if needed */
+  }
 }
