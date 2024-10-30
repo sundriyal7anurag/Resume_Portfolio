@@ -1,4 +1,10 @@
-import { contactObj, listObj, sideNavfullObj, skillExperienceObj, textbody } from './constantsStructure';
+import {
+  contactObj,
+  listObj,
+  sideNavfullObj,
+  skillExperienceObj,
+  textbody,
+} from './constantsStructure';
 
 export const educationDataArr: Array<listObj> = [
   {
@@ -75,10 +81,9 @@ export const experienceData: Array<listObj> = [
   },
 ];
 
-
 export const homeData: textbody = {
   description1:
-    "Hey! I'm Anurag Sundriyal 👋</br> A UI Developer with a knack for crafting smooth, user-friendly web apps. With skills in Angular and React, I’ve worked on projects like chatbot UIs for instant support and employee management tools to simplify workflows. My goal? Building intuitive and efficient digital experiences.",
+    "Hey2! I'm Anurag Sundriyal 👋</br> A UI Developer with a knack for crafting smooth, user-friendly web apps. With skills in Angular and React, I’ve worked on projects like chatbot UIs for instant support and employee management tools to simplify workflows. My goal? Building intuitive and efficient digital experiences.",
   highlight: [
     'Angular | React | TypeScript',
     'RESTful APIs | Node.js | Express.js',
@@ -87,7 +92,6 @@ export const homeData: textbody = {
   description2:
     "Check out the Education, Experience, and About sections for a peek into my journey and projects. And if you're interested in collaborating, feel free to reach out via the Contact tab!",
 };
-
 
 export const aboutData: textbody = {
   description1:
@@ -100,7 +104,6 @@ export const aboutData: textbody = {
   description2:
     'When I’m not working, I’m checking out new tools, reading tech blogs, or relaxing with some gaming or cricket (it’s my way to recharge and spark new ideas). </br> If you’re into cool projects too, let’s see what we can build!',
 };
-
 
 export const contactData: Array<contactObj> = [
   {
@@ -129,41 +132,54 @@ export const contactData: Array<contactObj> = [
   },
 ];
 
-
-export const skillExperienceData: Array<listObj>= [
+export const skillExperienceData: Array<listObj> = [
   {
     title: 'Primary Skill',
     description: 'Angular',
   },
   {
-    title:'Frontend Technologies',
-    description:'Angular, ReactJS, TypeScript, JavaScript, HTML5, CSS3, SASS'
+    title: 'Frontend Technologies',
+    description: 'Angular, ReactJS, TypeScript, JavaScript, HTML5, CSS3, SASS',
   },
   {
-    title:'Backend Technologies',
-    description:'NodeJS, ExpressJS'
+    title: 'Backend Technologies',
+    description: 'NodeJS, ExpressJS',
   },
   {
-    title:'Version Control',
-    description:'Git, GitHub, Bitbucket'
-  }
+    title: 'Version Control',
+    description: 'Git, GitHub, Bitbucket',
+  },
+];
 
-]
-
-
-export const sideNavData: sideNavfullObj= {
-  name:"Anurag Sundriyal",
-  profileImgUrl:"assets/AnuragSundriyalPP.jpg",
-  designation:"Angular Developer",
-  resumeUrl:"https://drive.google.com/uc?export=download&id=1KpLomoVUvWH_3jbuYO-XGgmCXveF3Ke1",
-  resumeIcon:"assets/icons/download.png",
-  navLinks:[
-  {title:"Home", navLinkUrl:"/home", navIcon:"assets/icons/home.png"},
-  {title:"Education", navLinkUrl:"/education", navIcon:"assets/icons/education.png"},
-  {title:"Experience", navLinkUrl:"/experience", navIcon:"assets/icons/experience.png"},
-  {title:"skills and expertise", navLinkUrl:"/skills-and-expertise", navIcon:"assets/icons/skills.png"},
-  {title:"About", navLinkUrl:"/about", navIcon:"assets/icons/about.png"}, 
-  {title:"Contact", navLinkUrl:"/contact", navIcon:"assets/icons/contact.png"},
-  ]
-}
-
+export const sideNavData: sideNavfullObj = {
+  name: 'Anurag Sundriyal',
+  profileImgUrl: 'assets/AnuragSundriyalPP.jpg',
+  designation: 'Angular Developer',
+  resumeUrl:
+    'https://drive.google.com/uc?export=download&id=1KpLomoVUvWH_3jbuYO-XGgmCXveF3Ke1',
+  resumeIcon: 'assets/icons/download.png',
+  navLinks: [
+    { title: 'Home', navLinkUrl: '/home', navIcon: 'assets/icons/home.png' },
+    {
+      title: 'Education',
+      navLinkUrl: '/education',
+      navIcon: 'assets/icons/education.png',
+    },
+    {
+      title: 'Experience',
+      navLinkUrl: '/experience',
+      navIcon: 'assets/icons/experience.png',
+    },
+    {
+      title: 'skills and expertise',
+      navLinkUrl: '/skills-and-expertise',
+      navIcon: 'assets/icons/skills.png',
+    },
+    { title: 'About', navLinkUrl: '/about', navIcon: 'assets/icons/about.png' },
+    {
+      title: 'Contact',
+      navLinkUrl: '/contact',
+      navIcon: 'assets/icons/contact.png',
+    },
+  ],
+};

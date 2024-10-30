@@ -8,6 +8,11 @@ import { sideNavData } from './constants/constantsData';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'my-Portfolio-Resume';
-  mySideNavDataData: sideNavfullObj = sideNavData
+  mySideNavData: sideNavfullObj = sideNavData
+  isSidebarCollapsed = false;
+
+  onSidebarCollapsed(collapsed: boolean): void {
+    this.isSidebarCollapsed = collapsed;
+    console.log("isSidebarCollapsed=",this.isSidebarCollapsed)
+  }
 }

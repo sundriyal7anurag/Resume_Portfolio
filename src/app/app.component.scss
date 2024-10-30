@@ -1,18 +1,30 @@
-.display-flex {
+.container {
   display: flex;
-  min-height: 100vh; /* Ensures the container grows if content is taller than viewport */
-  overflow: hidden; /* Prevents scrolling on the parent container */
+  min-height: 100%;
 }
 
 .rhs-main {
-  margin-left: 270px; /* Space between sidebar and main content */
-  flex-grow: 1; /* Takes up remaining space beside the sidebar */
-  // padding: 20px;
-  background-color: #ffffff; /* White background for a clean look */
-  overflow-y: auto; /* Allows scrolling for large content */
-  display: flex;
-  // justify-content: center; /* Centers horizontally */
-  box-sizing: border-box; /* Ensures padding doesn’t cause overflow */
-  height: calc(100vh - 20px); /* Adjust height to allow for padding */
-  display: block;
+  flex-grow: 1;
+  background-color: #ffffff;
+  overflow-y: auto;
+  flex-grow: 1; /* Take remaining space */
+  transition: flex-grow 0.3s ease; /* Smooth transition */
+}
+
+app-side-nav {
+  transition: width 0.3s ease;
+}
+
+.expanded-width {
+  width: 270px;
+}
+.collapse-width {
+  width: 60px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  app-side-nav {
+    width: 60px; // Default to icons-only width on small screens
+  }
 }
