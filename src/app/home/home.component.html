@@ -1,0 +1,17 @@
+<app-section-header [headerData]="homeHeaderData"></app-section-header>
+<app-section-body>
+  <div class="body-container">
+    <div
+      class="margin-botton20px padding-15px"
+      [innerHTML]="myHomeData.description1"
+    ></div>
+    <div class="margin-botton20px padding-15px">
+      <p><strong>Skills & Expertise:</strong></p>
+      <strong></strong>
+      <ul>
+        <li *ngFor="let highlight of myHomeData.highlight">{{ highlight }}</li>
+      </ul>
+    </div>
+    <div class="padding-15px" [innerHTML]="myHomeData.description2"></div>
+  </div>
+</app-section-body>

@@ -1,0 +1,25 @@
+.header {
+  
+  margin: 0 0 10px 0; /* No margin on top, 10px bottom */
+  padding: 20px 0; /* Padding for top and bottom */
+  background-color: #f8f9fa; /* Background color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  text-align: center; /* Centered text */
+}
+
+.header h1 {
+  font-size: 2.5rem; /* Heading size */
+  color: #333; /* Heading color */
+  margin: 0; /* No margin */
+  font-family: Arial, sans-serif; /* Font family */
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2); /* Text shadow */
+}
+
+.header-width{
+  width: 100%; /* Ensure full width */
+}
+@media (max-width: 768px) {
+  .header-width {
+    width: 380px; /* Full width on small screens */
+  }
+}

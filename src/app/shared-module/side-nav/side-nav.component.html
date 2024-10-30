@@ -1,0 +1,31 @@
+<div class="sidenav" [class.collapsed]="isCollapsed">
+  <!-- Toggle Button (always visible) -->
+  <button class="toggle-btn" (click)="toggleSidebar()">
+    <img *ngIf="!isCollapsed" [src]="'assets/icons/expand.png'" alt="Expand Sidebar" />
+    <img *ngIf="isCollapsed"  [src]="'assets/icons/collapse.png'" alt="Collapse Sidebar" />
+  </button>
+
+  <!-- Profile Section (only visible when expanded) -->
+  <div class="profile" *ngIf="!isCollapsed">
+    <img [src]="sideNavData.profileImgUrl"  alt="Profile Picture" class="profile-pic" />
+    <div class="name-container">
+      <span class="name">{{ sideNavData.name }}</span>
+      <a [href]="sideNavData.resumeUrl" download>
+        <img [src]="sideNavData.resumeIcon" class="download-icon" />
+      </a>
+    </div>
+    <p class="designation">{{ sideNavData.designation }}</p>
+  </div>
+
+  <!-- Navigation Links -->
+  <div class="nav-padding-top-10px">
+    <a
+      *ngFor="let navData of sideNavData.navLinks"
+      [routerLink]="navData.navLinkUrl"
+      routerLinkActive="active"
+    >
+      <img [src]="navData.navIcon" class="nav-icon" />
+      <span *ngIf="!isCollapsed">{{ navData.title }}</span>
+    </a>
+  </div>
+</div>
